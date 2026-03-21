@@ -25,14 +25,17 @@ Vercel is the easiest platform for this project. It handles static assets and se
 3.  **The `vercel.json` file** handles SPA routing and the API routes in `api/index.ts`.
 4.  **Environment Variables**: Add `GEMINI_API_KEY` and `APP_URL` in the Vercel dashboard.
 
-### Option 2: Netlify (Static Hosting)
+### Option 2: Netlify (Recommended)
 
-Netlify is also great for static assets.
+Netlify is excellent for hosting this project. It handles static assets and serverless functions via the included `netlify.toml`.
 
-1.  **Build Command**: `npm run build`
-2.  **Output Directory**: `dist`
-3.  **Environment Variables**: Add `GEMINI_API_KEY` and `APP_URL` in the platform's dashboard.
-4.  **SPA Routing**: You may need a `_redirects` file with `/* /index.html 200`.
+1.  **Connect your GitHub repository** to Netlify.
+2.  **Build Settings**:
+    *   **Build command**: `npm run build`
+    *   **Publish directory**: `dist`
+    *   **Functions directory**: `netlify/functions`
+3.  **The `netlify.toml` file** handles SPA routing and the API routes in `netlify/functions/api.ts`.
+4.  **Environment Variables**: Add `GEMINI_API_KEY` and `APP_URL` in the Netlify dashboard.
 
 ### Option 3: Heroku / Cloud Run / VPS (Full-Stack Hosting)
 
