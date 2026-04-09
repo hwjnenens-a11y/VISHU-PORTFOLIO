@@ -850,6 +850,14 @@ const Projects = () => {
       img: 'https://img.youtube.com/vi/hTobvSmBzwE/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/hTobvSmBzwE?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
+    { 
+      id: 11, 
+      title: 'Global Strategy: Animated Logistics', 
+      desc: 'High-precision map animations detailing strategic global movements and complex historical logistics.', 
+      category: 'Map Animation', 
+      img: 'https://img.youtube.com/vi/VUNWtiRgWQE/maxresdefault.jpg',
+      videoUrl: 'https://www.youtube.com/embed/VUNWtiRgWQE?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
+    },
   ];
 
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
