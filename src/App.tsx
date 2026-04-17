@@ -774,7 +774,7 @@ const Services = () => {
 };
 
 const Projects = () => {
-  const categories = ['All', 'Short Form', 'Long Form', 'Map Animation'];
+  const categories = ['All', 'Short Form', 'Long Form', 'Map Animation', 'Motion Graphics'];
   const [activeTab, setActiveTab] = useState('All');
 
   const projects = [
@@ -858,6 +858,14 @@ const Projects = () => {
       img: 'https://img.youtube.com/vi/VUNWtiRgWQE/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/VUNWtiRgWQE?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
+    { 
+      id: 12, 
+      title: 'Motion Graphics Mastery: Dynamic Visuals', 
+      desc: 'Cutting-edge motion graphics featuring fluid animations and complex visual effects for high-end production.', 
+      category: 'Motion Graphics', 
+      img: 'https://img.youtube.com/vi/ns7pR1vlLL8/maxresdefault.jpg',
+      videoUrl: 'https://www.youtube.com/embed/ns7pR1vlLL8?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
+    },
   ];
 
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
@@ -912,33 +920,33 @@ const Projects = () => {
       </AnimatePresence>
       <div className="container mx-auto px-6 py-16 rounded-[64px] bg-gradient-to-br from-white/[0.05] via-white/[0.02] to-transparent backdrop-blur-2xl border border-white/10 shadow-[0_30px_100px_rgba(0,0,0,0.6)] relative overflow-hidden group">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-brand-yellow/30 to-transparent" />
-        <div className="flex flex-col md:flex-row md:items-end justify-start mb-12 md:mb-16 gap-x-12 gap-y-10 px-4 md:px-6">
+        <div className="flex flex-col items-start justify-start mb-12 md:mb-16 gap-y-8 md:gap-y-12 px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             className="flex flex-col items-start"
           >
-            <h2 className="text-4xl md:text-6xl text-white mb-3 md:mb-2 font-display italic tracking-tight">
+            <h2 className="text-5xl md:text-7xl text-white mb-4 md:mb-4 font-display italic tracking-tight">
               FEATURED <span className="text-brand-yellow">PROJECTS</span>
             </h2>
-            <p className="text-gray-400 md:text-gray-500 mt-1 uppercase tracking-[0.3em] text-[10px] md:text-xs max-w-xs leading-relaxed">
-              Edits that grab attention and drive results.
+            <p className="text-gray-400 md:text-gray-500 mt-1 uppercase tracking-[0.4em] text-[10px] md:text-xs max-w-sm leading-relaxed">
+              Premium cinematic edits that grab attention and drive viral results.
             </p>
           </motion.div>
           
-          <div className="flex flex-nowrap gap-2 md:gap-2 p-1.5 md:p-2 bg-brand-charcoal/90 backdrop-blur-2xl rounded-full border border-white/10 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory shadow-[0_25px_60px_rgba(0,0,0,0.7)] relative group/nav w-full md:w-auto">
-            <div className="absolute inset-0 bg-gradient-to-r from-brand-yellow/5 via-transparent to-brand-yellow/5 opacity-0 group-hover/nav:opacity-100 transition-opacity duration-700 pointer-events-none rounded-full" />
+          <div className="grid grid-cols-2 md:flex md:flex-nowrap items-center justify-center gap-2 md:gap-3 p-2.5 md:p-2.5 bg-brand-charcoal/90 backdrop-blur-3xl rounded-[2rem] md:rounded-full border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.8)] relative group/nav w-full md:w-auto">
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-yellow/5 via-transparent to-brand-yellow/5 opacity-0 group-hover/nav:opacity-100 transition-opacity duration-700 pointer-events-none rounded-[2rem] md:rounded-full" />
             {categories.map(cat => (
               <motion.button
                 key={cat}
                 onClick={() => setActiveTab(cat)}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className={`relative px-6 md:px-8 py-2.5 md:py-3.5 rounded-full text-[10px] md:text-[11px] font-black tracking-[0.2em] md:tracking-[0.25em] uppercase whitespace-nowrap transition-all duration-700 snap-center overflow-hidden ${
+                className={`relative px-4 md:px-9 py-3 md:py-4 rounded-full text-[9px] md:text-[11px] font-black tracking-[0.1em] md:tracking-[0.25em] uppercase whitespace-nowrap transition-all duration-700 w-full md:w-auto ${
                   activeTab === cat 
                     ? 'text-brand-dark' 
                     : 'text-gray-400 hover:text-white'
-                }`}
+                } ${cat === 'All' ? 'col-span-2 md:col-span-1' : ''}`}
               >
                 {activeTab === cat && (
                   <motion.div
