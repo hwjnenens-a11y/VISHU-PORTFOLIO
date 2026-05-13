@@ -866,6 +866,14 @@ const Projects = () => {
       img: 'https://img.youtube.com/vi/ns7pR1vlLL8/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/ns7pR1vlLL8?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
+    { 
+      id: 13, 
+      title: 'Cinematic Branding: Motion Strategy', 
+      desc: 'High-impact motion design focusing on brand identity and advanced visual storytelling.', 
+      category: 'Motion Graphics', 
+      img: 'https://img.youtube.com/vi/qvt4i29N__Y/maxresdefault.jpg',
+      videoUrl: 'https://www.youtube.com/embed/qvt4i29N__Y?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
+    },
   ];
 
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
