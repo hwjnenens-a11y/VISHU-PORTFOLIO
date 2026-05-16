@@ -783,6 +783,7 @@ const Projects = () => {
       title: 'Viral Storytelling: High-Impact Shorts', 
       desc: 'Expertly paced short-form content engineered for maximum audience retention and viral engagement.', 
       category: 'Short Form', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/1kGl88J-5V8/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/1kGl88J-5V8?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -791,6 +792,7 @@ const Projects = () => {
       title: 'Cinematic Narratives: Documentary Style', 
       desc: 'An immersive long-form experience blending professional storytelling with high-end cinematic production.', 
       category: 'Long Form', 
+      aspect: 'landscape',
       img: 'https://img.youtube.com/vi/LHGlDqG4k_Y/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/LHGlDqG4k_Y?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -799,6 +801,7 @@ const Projects = () => {
       title: 'Warfare & Strategy: Conflict Mapping', 
       desc: 'Sophisticated map animations detailing the strategic movements and logistics of historical global conflicts.', 
       category: 'Map Animation', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/oUyik6yewMI/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/oUyik6yewMI?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -807,6 +810,7 @@ const Projects = () => {
       title: 'Engagement Mastery: Viral Short-Form', 
       desc: 'Strategically crafted short-form narratives designed to capture attention and dominate social algorithms.', 
       category: 'Short Form', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/Tg35RSF0Bkg/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/Tg35RSF0Bkg?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -815,6 +819,7 @@ const Projects = () => {
       title: 'Trade Routes: The Silk Road Journey', 
       desc: 'Advanced cartographic visualization tracking the historical Silk Road with fluid, cinematic animations.', 
       category: 'Map Animation', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/COVrTyOb278/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/COVrTyOb278?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -823,6 +828,7 @@ const Projects = () => {
       title: 'Dynamic Motion: High-Energy Edits', 
       desc: 'Fast-paced, high-energy short-form content featuring cutting-edge transitions and viral storytelling.', 
       category: 'Short Form', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/ksI2FnaN3UA/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/ksI2FnaN3UA?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -831,6 +837,7 @@ const Projects = () => {
       title: 'The Mongol Conquest: Imperial Expansion', 
       desc: 'A powerful visualization of the Mongol Empire\'s rapid territorial growth and historical impact.', 
       category: 'Map Animation', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/hTobvSmBzwE/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/hTobvSmBzwE?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -839,6 +846,7 @@ const Projects = () => {
       title: 'Cartographic Motion: Advanced Visuals', 
       desc: 'High-impact map animations featuring advanced motion graphics and data-driven historical storytelling.', 
       category: 'Map Animation', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/u0bhtdDv3lw/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/u0bhtdDv3lw?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -847,6 +855,7 @@ const Projects = () => {
       title: 'Imperial Legacies: Rise & Fall Mapping', 
       desc: 'An epic cartographic journey showcasing the rise and fall of history\'s most influential global empires.', 
       category: 'Map Animation', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/hTobvSmBzwE/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/hTobvSmBzwE?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -855,6 +864,7 @@ const Projects = () => {
       title: 'Global Strategy: Animated Logistics', 
       desc: 'High-precision map animations detailing strategic global movements and complex historical logistics.', 
       category: 'Map Animation', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/VUNWtiRgWQE/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/VUNWtiRgWQE?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -863,6 +873,7 @@ const Projects = () => {
       title: 'Motion Graphics Mastery: Dynamic Visuals', 
       desc: 'Cutting-edge motion graphics featuring fluid animations and complex visual effects for high-end production.', 
       category: 'Motion Graphics', 
+      aspect: 'portrait',
       img: 'https://img.youtube.com/vi/ns7pR1vlLL8/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/ns7pR1vlLL8?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
@@ -871,8 +882,18 @@ const Projects = () => {
       title: 'Cinematic Branding: Motion Strategy', 
       desc: 'High-impact motion design focusing on brand identity and advanced visual storytelling.', 
       category: 'Motion Graphics', 
+      aspect: 'landscape',
       img: 'https://img.youtube.com/vi/qvt4i29N__Y/maxresdefault.jpg',
       videoUrl: 'https://www.youtube.com/embed/qvt4i29N__Y?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
+    },
+    { 
+      id: 14, 
+      title: 'Advanced Motion Design: Visual Identity', 
+      desc: 'A sophisticated exploration of motion design principles applied to high-end visual identities and immersive graphics.', 
+      category: 'Motion Graphics', 
+      aspect: 'landscape',
+      img: 'https://img.youtube.com/vi/7EAuSthbUI0/maxresdefault.jpg',
+      videoUrl: 'https://www.youtube.com/embed/7EAuSthbUI0?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0'
     },
   ];
 
@@ -900,7 +921,7 @@ const Projects = () => {
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               className={`relative w-full overflow-hidden shadow-[0_0_100px_rgba(250,204,21,0.15)] border border-white/10 bg-black rounded-[40px] ${
-                selectedProject.category === 'Long Form' 
+                selectedProject.aspect === 'landscape' 
                   ? 'max-w-6xl aspect-video' 
                   : 'max-w-md aspect-[9/16] max-h-[90vh]'
               }`}
@@ -990,7 +1011,7 @@ const Projects = () => {
                 onMouseLeave={() => setHoveredProjectId(null)}
                 onClick={() => setSelectedProject(project)}
                 className={`group relative rounded-[32px] overflow-hidden cursor-pointer bg-brand-charcoal border border-white/5 shadow-2xl transition-all duration-500 ${
-                  project.category === 'Long Form' ? 'aspect-video' : 'aspect-[9/16]'
+                  project.aspect === 'landscape' ? 'aspect-video' : 'aspect-[9/16]'
                 }`}
               >
                 <div className="w-full h-full overflow-hidden relative">
